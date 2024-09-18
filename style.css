@@ -28,6 +28,23 @@ h1 {
   padding-left: 20px;
   padding-right: 20px;
 }
+<body>
+<div class="mbappé">
+  <div id="top">
+    <h1>Portfolio de ARZUR Lucas</h1>
+  </div>
+  <div id="main">
+    <div class="image-principale">
+      <div class="text-block">
+        <p>Bienvenue sur mon Portfolio</p>
+      </div>
+    </div>
+    <div class="info">Ce portfolio contient toute mes expérience depuis l'obtention de mon Bac
+    </div>
+  </div>
+</div>
+
+</body>
 </style>
 </head>
 </html>
