@@ -1,1 +1,33 @@
-dddd
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+
+body{
+  background-color: lightblue;
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.info{
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  background-color: #2196F3
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</style>
+</head>
+</html>
