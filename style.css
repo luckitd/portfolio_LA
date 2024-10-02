@@ -25,8 +25,8 @@ h2 {
 .image-principale {
   position: relative;
   font-family: Arial;
-  width: 300px;
-  height: 100px;
+  max-width:100%;
+  height: auto;
 }
 .text-block {
   position: absolute;
