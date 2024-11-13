@@ -3,11 +3,19 @@ body{
   font-family: "Lato", sans-serif;
 }
 
+h1, h2, .info, .text-block {
+  font-family: "Lato", sans-serif;
+}
+
 h1 {
   text-align: left;
   background-color: blue;
-  margin-right: 200px;
+  margin: 0;
   color: white;
+  font-size: 2rem; 
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
   
 h2 {
@@ -20,20 +28,26 @@ h2 {
   opacity: 1;
   transition: opacity 0.6s;
   margin-bottom: 15px;
-  background-color: #2196F3
+}
+.info:hover {
+  opacity: 1;
 }
 .image-principale {
-  position: relative;
-  font-family: Arial;
-  max-width:100%;
-  height: auto;
+  text-align: left;
+  background-color: blue;
+  margin: 0; 
+  color: white;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px;
 }
 .text-block {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
 }
