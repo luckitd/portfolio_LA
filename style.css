@@ -3,7 +3,7 @@ body{
   font-family: "Lato", sans-serif;
 }
 
-h1, h2, .info, .text-block {
+h1, .info, .text-block {
   font-family: "Lato", sans-serif;
 }
 
@@ -17,12 +17,7 @@ h1 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
-  
-h2 {
-  text-align: center;
-  background-color: black;
-  color:white;
-}
+
 .info {
   padding: 20px;
   background-color: #f44336;
