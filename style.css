@@ -12,7 +12,7 @@ h1 {
   color: white;
   font-size: 1rem; 
   text-transform: lowercase;
-  text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.6);
+  text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.6);
   padding: Content;
 }
 
