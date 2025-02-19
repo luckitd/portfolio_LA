@@ -20,6 +20,8 @@ h1 {
   
 h2 {
   text-align: center;
+  background-color: black;
+  color:white;
 }
 .info {
   padding: 20px;
