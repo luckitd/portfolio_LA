@@ -8,12 +8,11 @@ h1, .info, .text-block {
 }
 
 h1 {
-  text-align: center;
   background-color: black;
   color: white;
   font-size: 1rem; 
   text-transform: lowercase;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.6);
   padding: Content;
 }
 
