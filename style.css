@@ -1,8 +1,12 @@
-body{
+body {
   background-color: lightblue;
   font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
+ En-tête 
 h1, .info, .text-block {
   font-family: "Lato", sans-serif;
 }
@@ -10,37 +14,35 @@ h1, .info, .text-block {
 h1 {
   color: white;
   text-align: center;
-  font-size: 1rem; 
-  text-transform: lowercase;
-  text-shadow: 15px 15px 15px rgba(255, 255, 255, 0.4);
-  padding: Content;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+  padding: 20px 0;
+  background-color:
 }
 
-.info {
+/* Section principale */
+#main {
   padding: 20px;
-  background-color: None;
-  color: white;
-  opacity: 1;
-  transition: opacity 0.6s;
-  margin-bottom: 15px;
-}
-.info:hover {
-  opacity: 1;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.top{
-  background-color: black;
-  
-}
 .image-principale {
-  text-align: left;
-  margin: 0; 
+  margin: 0;
   color: white;
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   padding: 10px;
 }
+
+.image-principale img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 .text-block {
   position: absolute;
   bottom: 20px;
@@ -49,4 +51,57 @@ h1 {
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+ Informations personnelles 
+.info {
+  padding: 20px;
+  background-color: #333; 
+  color: white;
+  opacity: 0.9; 
+  transition: opacity 0.6s;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.info:hover {
+  opacity: 1;
+}
+
+/* À propos de moi */
+.about-me {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.about-me h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+ Pied de page 
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+ Responsivité 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .image-principale img {
+    width: 100%;
+  }
+
+  .about-me, .info, .text-block {
+    padding: 15px;
+  }
 }
