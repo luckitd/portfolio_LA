@@ -5,8 +5,10 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  line-height: 1.6; 
-  text-align: center;
+  line-height: 1.6;
+  text-align: center; 
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
  En-tête 
@@ -16,13 +18,12 @@ h1, .info, .text-block {
 
 h1 {
   color: white;
-  text-align: center;
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   text-transform: uppercase;
   text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
-  padding: 30px 0; 
-  background-color: #333; 
-  margin-bottom: 40px; 
+  padding: 30px 0;
+  background-color: #333;
+  margin-bottom: 40px;
 }
 
  Menu de navigation 
@@ -33,7 +34,7 @@ nav {
   width: 100%;
   background-color: #333;
   z-index: 1000;
-  padding: 15px 0; 
+  padding: 15px 0;
 }
 
 nav ul {
@@ -45,13 +46,13 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 30px; 
+  margin: 0 30px;
 }
 
 nav ul li a {
-  color: Black;
+  color: white;
   text-decoration: none;
-  font-size: 20px; /* Taille plus grande pour les liens */
+  font-size: 20px;
   padding: 10px 20px;
 }
 
@@ -64,12 +65,12 @@ nav ul li a:hover {
 main {
   margin-top: 80px; 
   padding: 40px 20px;
-  max-width: 1200px;
+  max-width: 100%; 
   margin: 0 auto;
-  text-align: center;
+  text-align: center; 
 }
 
-/* Section principale */
+ Section principale 
 .image-principale {
   margin: 0;
   color: white;
@@ -77,14 +78,16 @@ main {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 .image-principale img {
   width: 100%;
   height: auto;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
+ Texte sur l'image 
 .text-block {
   position: absolute;
   bottom: 20px;
@@ -93,7 +96,8 @@ main {
   color: white;
   padding: 15px 30px;
   border-radius: 8px;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
+  max-width: 90%; 
 }
 
  Informations personnelles 
@@ -103,8 +107,8 @@ main {
   color: white;
   opacity: 0.9;
   transition: opacity 0.6s;
-  margin-bottom: 40px; 
-  border-radius: 15px; 
+  margin-bottom: 40px;
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -117,14 +121,14 @@ main {
   background-color: #f4f4f4;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
   text-align: center;
 }
 
 .about-me h2 {
-  font-size: 2rem; 
-  margin-bottom: 20px; 
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
  Pied de page 
@@ -133,26 +137,35 @@ footer {
   color: white;
   text-align: center;
   padding: 25px;
-  margin-top: 60px; 
+  margin-top: 60px;
 }
 
  Responsivité 
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 20px 0;
   }
 
+   Menu de navigation sur les petits écrans 
+  nav ul {
+    flex-direction: column; 
+    padding: 10px 0;
+  }
+
   nav ul li {
-    margin: 0 15px;
+    margin: 10px 0;
   }
 
   nav ul li a {
     font-size: 18px;
+    padding: 10px 15px;
   }
 
+   Sections 
   .image-principale img {
-    width: 100%;
+    width: 100%; 
+    height: auto;
   }
 
   .about-me, .info, .text-block {
@@ -160,6 +173,44 @@ footer {
   }
 
   .about-me h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+  }
+
+   Pour que la section text-block ne déborde pas 
+  .text-block {
+    max-width: 95%;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+ Pour les très petits écrans 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .image-principale {
+    padding: 10px;
+  }
+
+  .about-me, .info {
+    padding: 15px;
+  }
+
+  .about-me h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    padding: 15px;
   }
 }
